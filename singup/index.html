@@ -10,32 +10,21 @@
 </head>
 
 <body>
-    <nav>
-        <div class="brand">
-            <a href="/">MeShop.</a>
-        </div>
-        <div class="nav-items">
-            <!-- <a href="/f3-project-main/shop/index.html">Home</a> -->
-            <a href="/f3-project-main/login/login.html">Login</a>
-            <a href="/f3-project-main/singup/index.html">Signup</a>
-            <!-- <a href="/f3-project-main/cart/index.html">My Cart</a> -->
-        </div>
-    </nav>
-    <!-- sing up form start here  -->
+    
     <div class="form-box">
         <form action="">
-            <h2>Sing in</h2>
+            <h2>Register</h2>
             <input type="text" placeholder="First Name" id="fname">
             <input type="text" placeholder="Last Name" id="lname">
             <input type="text" placeholder="Email" id="email">
             <input type="text" placeholder="password" id="password">
             <input type="text" placeholder="confirm Password" id="cpassword">
             <p id="error"></p>
-            <input type="submit" value="Sing in" id="Singin">
+            <input type="submit" value="Register" id="Singin">
 
         </form>
     </div>
-    <!-- sing up form end here  -->
+    
     <script>
         let btn = document.getElementById("Singin");
         btn.addEventListener("click", validateForm);

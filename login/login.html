@@ -10,20 +10,9 @@
 </head>
 
 <body>
-    <nav>
-        <div class="brand">
-            <a href="/">MeShop.</a>
-        </div>
-        <div class="nav-items">
-            <!-- <a href="/f3-project-main/shop/index.html">Home</a> -->
-            <a href="/f3-project-main/login/login.html">Login</a>
-            <a href="/f3-project-main/singup/index.html">Signup</a>
-            <!-- <a href="/f3-project-main/cart/index.html">My Cart</a> -->
-        </div>
-    </nav>
     <div class="form-box">
         <form action="">
-            <h2>Log in</h2>
+            <h2>User Login</h2>
 
             <input type="text" placeholder="Email" id="email">
             <input type="text" placeholder="password" id="password">
@@ -50,12 +39,6 @@
                 if (temp[i].email === eamil && temp[i].password === password) {
 
                     emailExitFlag = false;
-                    // let temp = JSON.parse(localStorage.getItem("data"));
-                    // temp[i]["token"] = result;
-                    // console.log(temp);
-                    // localStorage.setItem("data", JSON.stringify(temp));
-                    // localStorage.setItem("loginInfo", JSON.stringify(temp[i].email));
-
                     window.location.href = "/f3-project-main/shop/index.html";
                 }
             }
